@@ -2,7 +2,7 @@
 // npm install express
 // Run this file with node CRUDBookNoDB.js
 // Test with Postman
-require("dotenv").config();
+//require("dotenv").config();
 
 const express = require('express');
 const app = express();
@@ -74,5 +74,5 @@ app.delete('/books/:id', (req, res) => {
   res.send(book);
 });
 
-const port = 5000;
+const port = 5500;
 app.listen(port, () => console.log(`Server is running on http://localhost:${port}`));
