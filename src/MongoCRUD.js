@@ -9,10 +9,7 @@ const app = express();
 app.use(express.json());
 
 // Connect to the MongoDB database
-mongoose.connect('mongodb://admin:LVPdvv11574@node87940-it-fullstack.proen.app.ruk-com.cloud:11509', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
+mongoose.connect('mongodb://admin:LVPdvv11574@node87940-it-fullstack.proen.app.ruk-com.cloud:11509');
 // Define the book model
 const bookSchema = new mongoose.Schema({
   id : Number,
